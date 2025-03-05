@@ -2,6 +2,11 @@ Algoritmo "ComissãoVendeFrios"
 
 Var
 
+
+valormu: real
+valorpr: real
+valorpe: real
+valormor: real
 quantmu: real
 quantpr: real
 quantpe: real
@@ -40,10 +45,22 @@ Escreval("==========================================")
       vTotal <- (quantmu*56.20) + (quantpr*78.20) + (quantpe*89.60) + (quantmor*25.90)
 
       Escreval("------------------------------------------------")
-
-      Escreval("O valor das comissões são: mussarela: ", comissaomu ," presunto: ", comissaopr ," peito de peru: ", comissaope ," mortadela: ", comissaomor)
-          Escreval("------------------------------------------------")
-          Escreval("------------------------------------------------")
-      Escreval("O valor total da comissão é igual a: ", comissaoT, " e o valor total dos produtos é igual a ", vTotal)
+         Escreval("Comissão mussarela: R$ ", comissaomu)
+         Escreval("Comissão presunto: R$ ", comissaopr)
+         Escreval("Comissão peito de peru: R$ ", comissaope)
+         Escreval("Comissão mortadela: R$ ", comissaomor)
+         Escreval("Comissão total: R$ ", comissaoT)
+      Escreval("------------------------------------------------")
+         valormu <- quantmu*56.20
+         valorpr <- quantpr*78.20
+         valorpe <- quantpe*89.60
+         valormor <- quantmor*25.90
+         Escreval("Valor vendido pelo mussarela: ", valormu)
+         Escreval("Valor vendido pelo presunto: ", valorpr)
+         Escreval("Valor vendido pelo peito de peru: ", valorpe)
+         Escreval("Valor vendido pelo mortadela: ", valormor)
+      Escreval("------------------------------------------------")
+         Escreval("O valor total dos produtos é: ", vTotal)
 Escreval("==========================================")
+
 Fimalgoritmo
