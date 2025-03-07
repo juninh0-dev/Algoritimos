@@ -17,6 +17,7 @@ comissaoT: real
 vTotal: real
 
 Inicio
+
 Escreval("==========================================")
 
    Escreva("Quantos kg de Mussarela comprou? ")
@@ -62,7 +63,7 @@ Escreval("==========================================")
       vTotal <- vTotal + valorpr + valorpe + valormor
 
       Escreval("------------------------------------------------")
-         Escreval("Mussarela Vendida: R$ ")
+         Escreval("Mussarela Vendida")
          Escreval("Quantidade: ", quantmu, " Kg")
          Escreval("Valor total: R$ ", valormu:2:2)
          Escreval("Comissão: R$ ", comissaomu:2:2)
@@ -87,8 +88,8 @@ Escreval("==========================================")
 
       Escreval("------------------------------------------------")
           Escreval("VALORES TOTAIS")
-          Escreval("O valor total das comissões é: ", comissaoT)
-          Escreval("O valor total dos produtos é: ", vTotal)
+          Escreval("O valor total das comissões é: ", comissaoT:2:2)
+          Escreval("O valor total dos produtos é: ", vTotal:2:2)
 Escreval("==========================================")
 
 Fimalgoritmo
