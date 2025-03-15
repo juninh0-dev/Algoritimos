@@ -1,19 +1,10 @@
 Algoritmo "ComissãoVendeFrios"
 
 Var
-valormu: real
-valorpr: real
-valorpe: real
-valormor: real
-quantmu: real
-quantpr: real
-quantpe: real
-quantmor:real
-comissaomu:real
-comissaopr:real
-comissaope:real
-comissaomor:real
-comissaoT: real
+valormu, valorpr, valorpe, valormor: real
+quantmu, quantpr, quantpe, quantmor: real
+comissaomu, comissaopr, comissaope, comissaomor: real
+comissaoT:real
 vTotal: real
 
 Inicio
