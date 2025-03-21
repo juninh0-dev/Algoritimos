@@ -12,11 +12,13 @@ Inicio
       leia(usuario)
       Escreval("Digite a senha: ")
       leia(senha)
+      limpatela()
 
       Se(usuario = "Diego") e (senha = 2903) entao
 
          Escreval("Você foi logado!")
-fimalgoritmo
+
+interrompa
 Senao
    Escreval("Você digitou a senha ou o usuario errado!")
 fimse
