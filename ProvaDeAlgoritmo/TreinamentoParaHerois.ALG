@@ -1,0 +1,72 @@
+Algoritmo "TreinamentoParaHerois"
+//Nome da dupla: Altair Preto de Godoi Junior, Diego Lopes da Silva
+
+
+Var
+   i: caractere
+   notaH, notaT: real
+   mediaH: real
+   nomeH: caracter
+
+Inicio
+   repita
+      Escreval("NOTAS DOS HEROIS")
+      Escreval("-----------------------")
+      Escreval("[C] - Cadastrar nota do Heroi")
+      Escreval("-----------------------")
+      Escreval("[S] - Sair do programa")
+      leia (i)
+
+
+      Se(i = "C") ou (i = "c") entao
+         Escreval("Digite o nome do Heroi: ")
+         leia(nomeH)
+         repita
+            Escreval("Digite a primeira nota do Heroi")
+            leia(notaH)
+            Se(notaH > 10) entao
+               Escreval("Nota inválida! Digite um número menor ou igual a 10! BURRO!")
+            fimse
+         ate (notaH <= 10)
+
+         notaT <- notaT + notaH
+
+         repita
+            Escreval("Digite a segunda nota do Heroi")
+            leia(notaH)
+            Se(notaH > 10) entao
+               Escreval("Nota inválida! Digite um número menor ou igual a 10! BURRO!")
+            fimse
+         ate (notaH <= 10)
+
+         notaT <- notaT + notaH
+
+         repita
+            Escreval("Digite a terceira nota do Heroi")
+            leia(notaH)
+            Se(notaH > 10) entao
+               Escreval("Nota inválida! Digite um número menor ou igual a 10! BURRO!")
+            fimse
+         ate(notaH <= 10)
+         limpatela()
+
+         notaT <- notaT + notaH
+         mediaH <- notaT/3
+
+         Escreval ("A media do Heroi foi de: ", mediaH:2:2)
+
+
+         se (mediaH >= 7) entao
+            Escreval ("Heroi aprovado")
+         senao
+            se (mediaH < 7) e (mediaH > 4) entao
+               Escreval ("Heroi em recuperação")
+            senao
+               Escreval ("Heroi reprovado")
+            fimse
+         fimse
+      fimse
+   ate(i = "S") ou (i = "s")
+   Escreval ("Obrigado por utilizar o programa")
+
+Fimalgoritmo
