@@ -4,7 +4,7 @@ Algoritmo "TreinamentoParaHerois"
 
 Var
    i: caractere
-   notaH, notaT: real
+   notaH, notaT, x: real
    mediaH: real
    nomeH: caracter
 
@@ -17,44 +17,30 @@ Inicio
       Escreval("[S] - Sair do programa")
       leia (i)
 
-
       Se(i = "C") ou (i = "c") entao
          Escreval("Digite o nome do Heroi: ")
          leia(nomeH)
-         repita
-            Escreval("Digite a primeira nota do Heroi")
-            leia(notaH)
-            Se(notaH > 10) entao
-               Escreval("Nota inválida! Digite um número menor ou igual a 10! BURRO!")
-            fimse
-         ate (notaH <= 10)
 
-         notaT <- notaT + notaH
+         x <- 1
 
          repita
-            Escreval("Digite a segunda nota do Heroi")
+            Escreval("Digite a nota número", x, " do Heroi")
             leia(notaH)
             Se(notaH > 10) entao
+               limpatela()
                Escreval("Nota inválida! Digite um número menor ou igual a 10! BURRO!")
             fimse
-         ate (notaH <= 10)
-
-         notaT <- notaT + notaH
-
-         repita
-            Escreval("Digite a terceira nota do Heroi")
-            leia(notaH)
-            Se(notaH > 10) entao
-               Escreval("Nota inválida! Digite um número menor ou igual a 10! BURRO!")
+            Se(notaH <= 10) entao
+               x <- x + 1
+               notaT <- notaT + notaH
             fimse
-         ate(notaH <= 10)
+         ate(x = 4)
          limpatela()
 
-         notaT <- notaT + notaH
+
          mediaH <- notaT/3
 
-         Escreval ("A media do Heroi foi de: ", mediaH:2:2)
-
+         Escreval ("A média do Heroi foi de: ", mediaH:2:2)
 
          se (mediaH >= 7) entao
             Escreval ("Heroi aprovado")
