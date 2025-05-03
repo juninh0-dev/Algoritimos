@@ -11,7 +11,7 @@ Inicio
       roboSeg <- randi(10) + roboSeg
 
       Se(roboSeg > 99 ) e (roboSeg = roboPri) e (roboPri > 99) e (roboPri = roboSeg) entao
-         Escreval("UM EMPATE!")
+         Escreval("UM EMPATE! Os dois robos chegaram JUNTOS!")
 Fimalgoritmo
 
 senao
@@ -32,6 +32,7 @@ fimse
 fimse
 fimse
 
+limpatela()
 Escreval("O Robo número 1 está, ", roboPri, " metros.")
 leia(enter)
 Escreval("O Robo número 2 está, ", roboSeg, " metros.")
