@@ -1,8 +1,9 @@
-Algoritmo "MATRIZ_JOGO_DA_VELHA"
+Algoritmo "matrizJogoDaVelha
+"
 
 Var
    jogo : vetor [1..3, 1..3] de caracter
-   linha, coluna, i, j, verificador : inteiro
+   linha, coluna, i, j, verificador, test : inteiro
    jogador, ganhador: caracter
 Inicio
 
@@ -27,28 +28,33 @@ Inicio
       Escreval(jogador, "?")
       repita
          Repita
+
             Escreva("Informe a linha: ")
             Leia(linha)
 
          Até (linha > 0) e (linha <= 3)
 
          Repita
+
             Escreva("Informe a coluna: ")
             Leia(coluna)
          Até (coluna > 0) e (coluna <= 3)
 
-         Se (linha = " ") e (coluna = " ") entao
+         Se (jogo[linha, coluna] = " ") entao
             verificador <- 1
             jogo[linha, coluna] <- jogador
+            contador <- contador + 1
          senao
             Escreval("Esse campo já está preenchido!")
+            leia(test)
          fimse
+
       ate(verificador = 1)
 
-      Limpatela()
+      limpatela()
 
       Escreval(" JOGO DA VELHA ")
-      Escreval("Jogada ", jogadas, " de 9: ")
+      //Escreval("Jogada ", jogadas, " de 9: ")
       Escreval(" ", jogo[1,1]," | ",jogo[1,2]," | ", jogo[1,3])
       Escreval("-----------")
       Escreval(" ", jogo[2,1]," | ",jogo[2,2]," | ", jogo[2,3])
@@ -81,16 +87,11 @@ Inicio
          Fimse
       Fimpara
 
-      Se (jogador = "X") Então
-         jogador <- "O"
-      Senão
-         jogador <- "X"
-      Fimse
-      Se(ganhador <> "") Então
-
-         Interrompa
-      Fimse
-
+      //Se (jogador = "X") Então
+      //   jogador <- "O"
+      //Senão
+      //  jogador <- "X"
+      //Fimse
    ate(ganhador <> "")
 
    Escreval("")
