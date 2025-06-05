@@ -1,4 +1,4 @@
-Algoritmo "CofrinhoAdicionarMoeda"
+   Algoritmo "CofrinhoAdicionarMoeda"
 
 Var
    totalMoedas, moeda: inteiro

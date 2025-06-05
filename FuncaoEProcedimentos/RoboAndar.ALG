@@ -2,36 +2,27 @@ Algoritmo "roboAndar"
 
 Var
 
-   passos: inteiro
-   i: inteiro
+   passos, totalPassos: inteiro
 
-Procedimento Andar(passos: inteiro)
+Procedimento Andar(n: inteiro)
 Inicio
-   Se(i = 1)entao
-      Escreval("O robô deu 1 passo!")
-   senao
-      se(i = 0) entao
-         Escreval("O Robô parou de andar.")
-         Escreval("Total de passos:", passos)
-      fimse
-
-   fimse
-
-fimProcedimento
+   totalPassos <- totalPassos + 1
+fimprocedimento
 
 Inicio
-
+   passos <- 0
    repita
       Escreval("Digite 1, se o robô andou! Digite 0 se o robô não andou.")
-      leia(i)
+      leia(passos)
 
-      Se(i = 1)Entao
-         passos <- passos + 1
+      Se(passos = 1)Entao
+         limpatela()
+         Andar(passos)
+      Senao
+         Escreval("O robô parou de andar")
+         Escreval("O robo deu, ", totalPassos," passo(s).")
       fimse
 
-      limpatela()
-      Andar(passos)
 
-   ate(i = 0)
-
+   ate(passos = 0)
 Fimalgoritmo
