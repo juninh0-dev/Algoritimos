@@ -24,7 +24,7 @@ Inicio
 fimProcedimento
 
 Inicio
-   //Comandos básicos, recebendo valores necessários....
+   // Comandos básicos, recebendo valores necessários....
    Escreval("Digite o nome do aluno: ")
    leia(nome)
 
@@ -37,6 +37,7 @@ Inicio
 
    limpatela()
 
+   // Mostrando se o aluno foi aprovado ou não
    Escreval("Situação do aluno: ", nome)
    Escreval("")
    Escreval("A média do aluno foi: ", Media(nota1, nota2))
