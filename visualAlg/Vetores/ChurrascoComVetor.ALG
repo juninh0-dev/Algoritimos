@@ -50,7 +50,7 @@ Inicio
             Se(itens[i] = "") entao
                interrompa
             fimse
-            Escreval("Item: ", item[i])
+            Escreval("Item: ", itens[i], " R$",valorP[i])
 
          fimpara
 
