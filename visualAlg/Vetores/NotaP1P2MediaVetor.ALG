@@ -31,15 +31,15 @@ Inicio
       Escreval("[1] - Visualizar os alunos")
       Escreval("[2] - Ver a nota dos alunos")
       Escreval("[3] - Ver a média dos alunos")
-      Escreval("[0] - Sair das notas")
+      Escreval("[4] - Sair das notas")
       leia(choose)
       limpatela()
 
       Escolha choose
       Caso 1
          //Vendo os alunos registrados
+         Escreval("ALUNOS REGISTRADOS")
          Para x de 1 ate 10 faca
-            Escreval("ALUNOS REGISTRADOS")
             Escreval("------------------")
             Escreval("código do aluno: ", alunos[x])
          fimpara
@@ -60,14 +60,13 @@ Inicio
          Escreval("-----------------")
          Para x de 1 ate 10 faca
             media <- (p1[x] + p2[x])/2
-            Escreval("Média do aluno", alunos[x],":" media)
+            Escreval("Média do aluno", alunos[x],":", media)
             Escreval("----------------------------")
          fimpara
-         OutroCaso
+      OutroCaso
          Escreval("Opição inválida! Digite algo congruente")
-
       Fimescolha
 
-   ate(choose = 0)  //Fim do menu de navegação
+   ate(choose = 4)  //Fim do menu de navegação
 
 Fimalgoritmo
