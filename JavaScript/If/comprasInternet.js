@@ -26,12 +26,26 @@ if (opcao = 1) {
     console.log('[3] - Dinheiro');
 
     let pgto = read.question("Escolha: ");
+//Atribuindo as condições do desconto para o celular
+    if (pgto == 1) {
+        let vDesconto = celular * 0.1;
 
-    if(pgto = 1){
-        let vDescontado = celular*0.1;
-
+        console.log("COMPRA DO CELULAR - Pix")
         console.log("Valor total: " + celular);
-        console.log("Valor do desconto: " + vDescontado);
-        console.log(`Valor do descontado: ${celular - vDescontado}`);
+        console.log("Valor do desconto: " + vDesconto);
+        console.log(`Valor descontado: ${celular - vDesconto}`);
+    } else if(pgto == 2){
+
+        console.log("COMPRA DO CELULAR - Cartão")
+        console.log("Valor total: R$" + celular);
+        console.log("Valor do desconto: R$" + 0);
+        console.log(`Valor descontado: R$ ${celular}`);
+    } else{
+
+        let vDesconto = celular*0.05
+        console.log("COMPRA DO CELULAR - Dinheiro")
+        console.log("Valor total: R$" + celular);
+        console.log("Valor do desconto: R$" + 0);
+        console.log(`Valor descontado: R$ ${celular - vDesconto}`);
     }
 }
