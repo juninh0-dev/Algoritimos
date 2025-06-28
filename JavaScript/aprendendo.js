@@ -12,4 +12,4 @@ let n2 = read.question("Digite o segundo número: ");
 
 let resul = parseFloat(n1) + parseFloat(n2);
 //Mostrando o nome e o resultado na tela
-console.log(nome + "o resultado deu: " + resul)
+console.log(nome + " o resultado deu: " + resul)
