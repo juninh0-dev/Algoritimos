@@ -2,6 +2,8 @@ const read = require('readline-sync');
 
 let nome = read.question("Digite seu nome: ");
 
+//CASO TIVESSE UMA ESTRUTURA DE REPETIÇÃO var codFinanceira = (parseInt(Math.random() * 2000));
+var codFinanceira = 674367;
 
 console.log("SEJA BEM-VINDO " + nome);
 console.log("------------------------------------");
@@ -27,8 +29,6 @@ switch (parseInt(opcao)) {
         console.log("Renda maior que 1500!");
         console.log("------------------------------------");
         console.log("Ter mais de 18 anos!");
-        //CASO TIVESSE UMA ESTRUTURA DE REPETIÇÃO var codFinanceira = (parseInt(Math.random() * 2000));
-        var codFinanceira = 674367;
         console.log("------------------------------------");
         console.log("Código da empresa: " + codFinanceira);
         console.log("====================================");
@@ -36,13 +36,17 @@ switch (parseInt(opcao)) {
     case 2:
         console.log("FAZER EMPRÉSTIMO");
         let codigo = read.question("Digite o código da empresa: ");
-        
+
         if (codigo != codFinanceira) {
             console.log("Código da Financeira está INCORRETO!");
             return;
-            
-        } else if(codigo == codFinanceira){
+
+        }
+
+        if (codigo == codFinanceira) {
             //Verficando a renda do usuário
+            let renda = read.question("Digite sua renda: ");
+
             if (renda < 1500) {
                 console.log("Sua renda é baixa demais! Não é possível fazer o empréstimo.");
                 return;
@@ -57,6 +61,8 @@ switch (parseInt(opcao)) {
                 var parcela = parseFloat(renda) * 0.3;
             }
             //Verificando a idade do usuário
+            let idade = read.question("Digite sua idade: ")
+
             if (idade < 18) {
                 console.log("Você é muito novo! Não pode fazer o SEGURO!");
                 seguro = 0;
@@ -81,6 +87,15 @@ switch (parseInt(opcao)) {
                 console.log("-----------------------------------------------------");
                 var seguro = parcela * 0.15;
             }
+
+            console.log("=====================================================");
+            console.log("Dados de " + nome + ".")
+            console.log("-----------------------------------------------------");
+            console.log("Parcela: R$" + parcela);
+            console.log("-----------------------------------------------------");
+            console.log("Seguro: R$" + seguro);
+            console.log("=====================================================");
+
         }
 
         break;
@@ -90,5 +105,12 @@ switch (parseInt(opcao)) {
         console.log("FINANCIAMENTO E EMPRÉSTIMO - FACEBOOK");
         console.log("email: FinanComJS.Case@hotmail.com");
         break;
+    case 0:
+        console.log("Obrigado por usar nosso programa! Volte sempre!");
 
+        break;
+    default:
+        console.log("Opção inválida! Digite uma das opções corretas(1, 2, 3 ou 0).")
+        break;
+        
 }
