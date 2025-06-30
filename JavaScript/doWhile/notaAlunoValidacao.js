@@ -15,4 +15,5 @@ do {
     let media = (parseFloat(nota1) + parseFloat(nota2))/2;
 
     console.log(`A média do aluno ${alunos}, é igual: ${media}`)
+    alunos++;
 } while (alunos < 11);
