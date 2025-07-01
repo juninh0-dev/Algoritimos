@@ -1,6 +1,6 @@
 const read = require('readline-sync');
 
-let randomNumber = 28;
+let randomNumber = (parseInt(Math.random() * 10));
 
 let contador = 0;
 
