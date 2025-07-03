@@ -1,14 +1,20 @@
 const read = require('readline-sync');
 
 let velha = [[]];
+let jogador = "X";
 
-console.log(" X " + "| X |" + " X ");
-console.log("  _ " + "  _ " + "  _ ");
-console.log(" X " + "| X |" + " X ");
-console.log("  _ " + "  _ " + "  _ ");
-console.log(" X " + "| X |" + " X ");
+console.log("  " + " |  |" + "  ");
+console.log("----------");
+console.log("  " + " |  |" + "  ");
+console.log("----------");
+console.log("  " + " |  |" + "   ");
 
-for(let i = 0; i < 3; i++){
-    for(let j = 0; j < 3; j++){
+for(var i = 0; i < 3; i++){
+
+    velha[i] = " ";
+    console.log(velha[i] + " | ")
+
+    if(i < 2){
+        console.log(velha[i]+  "-------")
     }
 }
