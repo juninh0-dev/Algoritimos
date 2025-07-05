@@ -18,7 +18,7 @@ let winner = "";
 
 do {
     console.log("Qual posição você quer por o " + jogador + " ?");
-    var linha, coluna;
+    let linha, coluna;
     do {
         linha = parseInt(read.question("Informe a linha: "));
 
@@ -42,16 +42,17 @@ do {
     console.log("  " + velha[1][0] + " | " + velha[1][1] + " | " + velha[1][2]);
     console.log("--------------------------------------");
     console.log("  " + velha[2][0] + " | " + velha[2][1] + " | " + velha[2][2]);
-
     for (let i = 0; i < 2; i++) {
         if (velha[i][0] == "X" && velha[i][1] == "X" && velha[i][2] == "X") {
             winner = "X";
+
         } else if (velha[i][0] == "O" && velha[i][1] == "O" && velha[i][2] == "O") {
             winner = "O";
         }
+
     }
 
-} while (winner != "X" || winner != "O");
+} while (winner !== "X" || winner !== "O");
 
 
 
