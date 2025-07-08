@@ -19,4 +19,4 @@ do{
 
 }while(resp !== 'n' && resp !=='N')
 
-console.log("Acabou a bateria, o robô parou de andar.");
+console.log("Acabou a bateria, o robô parou de andar. Ele deu "+ passos +" passos.");
