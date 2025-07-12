@@ -6,5 +6,10 @@ imprime os dados formatados
 */
 
 let carro = {
-    
+    marca: "Toyota",
+    modelo: "Supra MK4",
+    ano: 1993
 };
+
+console.log(`O ${carro.modelo}, é da marca ${carro.marca}. Que foi criado em ${carro.ano}!`);
+
