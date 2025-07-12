@@ -22,19 +22,16 @@ let media = 0;
 
 for (let i = 0; i < alunos.length; i++) {
     media += alunos[i].nota;
+}
 
-    if (i == 4) {
-        media = media / (i + 1);
+media = media / alunos.length;
 
-        console.log("Média: " + media);
+console.log("Média: " + media);
 
-        for (let i = 0; i < alunos.length; i++) {
-            if (alunos[i].nota >= media) {
-                console.log("O aluno, " + alunos[i].nome + " foi APROVADO! Nota: " + alunos[i].nota);
-            } else {
-                console.log("O aluno, " + alunos[i].nome + " foi REPROVADO! Nota: " + alunos[i].nota);
-            }
-        }
+for (let i = 0; i < alunos.length; i++) {
+    if (alunos[i].nota >= media) {
+        console.log("O aluno, " + alunos[i].nome + " foi APROVADO! Nota: " + alunos[i].nota);
+    } else {
+        console.log("O aluno, " + alunos[i].nome + " foi REPROVADO! Nota: " + alunos[i].nota);
     }
-
 }
