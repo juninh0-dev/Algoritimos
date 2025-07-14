@@ -20,10 +20,10 @@ let produtos = [
 let total = 0;
 
 for (let i = 0; i < produtos.length; i++) {
-  console.log("Produto: " + produtos[i].nome + " | Preço unitário: R$" + produtos[i].preco + " | Quantidade: " + produtos[i].quantidade + " | Total: R$" + produtos[i].preco*produtos[i].quantidade);
+  console.log("Produto: " + produtos[i].nome + " | Preço unitário: R$" + (produtos[i].preco).toFixed(2) + " | Quantidade: " + produtos[i].quantidade + " | Total: R$" + (produtos[i].preco*produtos[i].quantidade).toFixed(2));
 
   total += produtos[i].preco*produtos[i].quantidade;
 
 };
 
-console.log("Total estoque: " + total);
+console.log("Total estoque: " + total.toFixed(2));
