@@ -17,7 +17,13 @@ let produtos = [
     { nome: "Monitor", preco: 200, quantidade: 2 }
 ];
 
+let total = 0;
 
 for (let i = 0; i < produtos.length; i++) {
-  console.log("Produto: " + produtos[i].nome + " | Preço: R$" + produtos[i].preco);
-}
+  console.log("Produto: " + produtos[i].nome + " | Preço unitário: R$" + produtos[i].preco + " | Quantidade: " + produtos[i].quantidade + " | Total: R$" + produtos[i].preco*produtos[i].quantidade);
+
+  total += produtos[i].preco*produtos[i].quantidade;
+
+};
+
+console.log("Total estoque: " + total);
