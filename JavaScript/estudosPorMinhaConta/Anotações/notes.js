@@ -36,3 +36,39 @@ console.log(alunos[1].nome); // Bruno
 
 
 // Etapa 2 – Métodos de Arrays
+
+/*📌 1. forEach()
+Serve para executar uma função para cada item do array, sem retornar nada.
+*/
+
+let nomes = ["Ana", "Bruno", "Carlos"];
+nomes.forEach(nome => {
+  console.log("Olá, " + nome);
+});
+
+/*
+📌 2. map()
+Cria um novo array, com os valores transformados
+*/
+
+let numeros = [1, 2, 3];
+let dobrados = numeros.map(num => num * 2); // [2, 4, 6]
+console.log(dobrados);
+
+/*
+📌 3. filter()
+Cria um novo array só com os itens que passam em um teste (if).
+*/
+
+let idades = [12, 17, 20, 30];
+let maiores = idades.filter(idade => idade >= 18); // [20, 30]
+console.log(maiores);
+
+/*
+📌 4. reduce()
+Reduz o array a um único valor (ex: soma total).
+*/
+
+let numeros = [1, 2, 3, 4];
+let soma = numeros.reduce((acumulador, atual) => acumulador + atual, 0); // 10
+console.log(soma)
