@@ -2,7 +2,7 @@
 
 
 /*
-📘 Teoria rápida
+-------------------------------------- Teoria rápida --------------------------------------
 Em JavaScript, objetos são estruturas que armazenam pares chave: valor.
 */
 
@@ -22,7 +22,7 @@ console.log(pessoa["idade"]); // 20
 pessoa.idade = 21;
 pessoa.profissao = "Estudante";
 
-//📦 Objetos dentro de arrays (muito comum!)
+// Objetos dentro de arrays (muito comum!)
 
 let alunos = [
   { nome: "Ana", nota: 8 },
@@ -35,7 +35,7 @@ let alunos = [
 console.log(alunos[1].nome); // Bruno
 
 
-// Etapa 2 – Métodos de Arrays
+// -------------------------------------- Etapa 2 – Métodos de Arrays ---------------------------------------------
 
 /*📌 1. forEach()
 Serve para executar uma função para cada item do array, sem retornar nada.
@@ -85,3 +85,56 @@ let produtos = [
 
 let caro = produtos.find(p => p.preco > 60); // retorna o Teclado
 console.log(caro)
+
+// ------------------------------------- Etapa 3 – Funções reutilizáveis -------------------------------------------
+
+
+/*
+ O que é uma função?
+Uma função é um bloco de código reutilizável que executa uma tarefa específica.
+Você pode chamar (ou invocar) ela quantas vezes quiser, com valores diferentes.
+*/
+
+//Estrutura básica de uma função:
+function nomeDaFuncao(parametros) {
+  // bloco de código
+  return resultado;
+}
+
+// Exemplo simples:
+function somar(a, b) {
+  return a + b;
+}
+
+let resultado = somar(3, 5);
+console.log(resultado); // Vai imprimir: 8
+
+/*
+O que acontece aqui:
+Criamos uma função chamada somar
+
+Ela recebe dois parâmetros: a e b
+
+Usa o return para devolver o resultado da soma
+
+Depois chamamos a função com os valores 3 e 5
+*/
+
+/*
+Dicas importantes:
+function é a palavra-chave para declarar
+
+Parâmetros são as "variáveis de entrada"
+
+return envia um valor de volta pra quem chamou a função
+
+Sem return, a função retorna undefined
+*/
+
+//Exemplo com string:
+
+function boasVindas(nome) {
+  return `Olá, ${nome}! Seja bem-vindo(a)!`;
+}
+
+console.log(boasVindas("Juninho"));
