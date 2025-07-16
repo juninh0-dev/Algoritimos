@@ -33,3 +33,6 @@ let alunos = [
 //Acessando:
 
 console.log(alunos[1].nome); // Bruno
+
+
+// Etapa 2 – Métodos de Arrays
