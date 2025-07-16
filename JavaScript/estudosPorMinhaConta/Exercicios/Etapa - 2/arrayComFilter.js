@@ -6,3 +6,10 @@ Use filter() para gerar um novo array contendo somente as idades maiores ou 
 
 Mostre no console o array original e o filtrado.
 */
+
+let idades = [17, 18, 29 , 30, 12, 11, 44]
+
+let maior = idades.filter(idade => idade >= 18);
+
+console.log(`Idades: ${idades.join(", ")};`);
+console.log(`Idade maiores ou igual a 18: ${maior.join(", ")}.`);
