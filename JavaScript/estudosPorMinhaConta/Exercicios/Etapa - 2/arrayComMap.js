@@ -18,3 +18,6 @@ Quando você imprime um array diretamente dentro de template strings,
 ele aparece separado por vírgulas. 
 Se quiser deixá‑lo mais “bonitinho”, pode usar .join(", "): 
 */
+
+console.log(`Números normais: ${numeros.join(", ")}`);
+console.log(`Números ao quadrado: ${quadrado.join(", ")}`);
